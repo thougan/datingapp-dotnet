@@ -4,12 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers;
-[ApiController]//endpint هذا الكلاس يعني كنترولر
 
-[Route("api/[controller]")]
-//الرابط للكنترولر 
-//api/[controller] الكنترولر اسمه يوزرز
-public class UsersController(DataContext context) : ControllerBase//عمليه حقن البيانات من الداتا بيس في الكنترولر
+public class UsersController(DataContext context) : BaseApiController//عمليه حقن البيانات من الداتا بيس في الكنترولر
 {
 
     [HttpGet]//اجيب بيانات من الداتا بيس 

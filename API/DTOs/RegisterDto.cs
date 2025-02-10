@@ -1,0 +1,11 @@
+using System;
+
+namespace API.DTOs;
+
+public class RegisterDto
+{
+
+public required string Username { get; set; }
+
+public required string Passoword { get; set; }
+}
